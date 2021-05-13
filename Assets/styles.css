@@ -12,6 +12,12 @@ body {
     height: 100vh;
 }
 
+.ham{ 
+    display: none;
+}
+
+/* hero section */
+
 .heroSection {
     max-width: 100%;
     color: hsl(0, 0%, 100%);
@@ -24,28 +30,217 @@ body {
     background-size: cover;
 }
 
-@media (min-width:360px) and (max-width:600px) {
-    
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar * {
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.slogan {
+    border: 5px solid white;
+    position: absolute;
+    padding: 4rem;
+    font-size: 4rem;
+    top: 50%;
+    left: 34%;
+    transform: translate(-50%, -34%);
+}
+
+.slogan p {
+    text-transform: uppercase;
+}
+
+/* About Section */
+
+.about {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+#img_interactive {
+    object-fit: cover;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.about_header {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.about_detail {
+    margin: 0.5rem;
+    font-family: 'Alata', sans-serif;
+}
+
+/* our creations section */
+
+.creations {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.creation_header {
+    order: -2;
+    align-self: flex-start;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    margin: 1rem 1rem;
+}
+
+.creation_img {
+    display: grid;
+    grid-template-columns: 256px 256px 256px 256px;
+    grid-template-rows: 450px 450px;
+    justify-content: center;
+}
+
+.creation_ex {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align:center;
+    padding-top: 22rem;
+    margin: 1rem 1rem;
+}
+
+.e1 {
+    background-image: url("images/desktop/image-deep-earth.jpg");
+}
+
+.e2 {
+    background-image: url("images/desktop/image-night-arcade.jpg");
+}
+
+.e3 {
+    background-image: url("images/desktop/image-soccer-team.jpg");
+}
+
+.e4 {
+    background-image: url("images/desktop/image-grid.jpg");
+}
+
+.e5 {
+    background-image: url("images/desktop/image-from-above.jpg");
+}
+
+.e6 {
+    background-image: url("images/desktop/image-pocket-borealis.jpg");
+}
+
+.e7 {
+    background-image: url("images/desktop/image-curiosity.jpg");
+}
+
+.e8 {
+    background-image: url("images/desktop/image-fisheye.jpg");
+}
+
+.creation_seeAll {
+    order: -1;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 55%);
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+    padding: 1rem;
+    margin: 1rem 1rem;
+}
+
+/* the footer section */
+
+.footer {
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.footer .links {
+    order: 2;
+    display: flex;
+}
+
+.links * {
+    padding: 0 0.5rem;
+}
+
+.social_logos * {
+    padding: 0 0.5rem;
+}
+
+.social_logos {
+    display: flex;
+}
+
+.copyrights {
+    order: 4;
+    color: hsl(0, 0%, 55%);
+}
+
+@media (min-width:360px) and (max-width:1000px) {
     /* header section or hero section */
 
-    .header {
+    /* .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+    } */
+
+
     .heroSection {
         background-image: url("images/mobile/image-hero.jpg");
         background-size: cover;
     }
-    .logo {
-        padding-top: 1.5rem;
-        padding-left: 0.5rem;
-    }
     .ham {
+        all: unset;
         padding-top: 1.5rem;
         padding-right: 0.5rem;
     }
-    .navbar li {
+
+    .navbar{ 
+      background-color: hsl(0, 0%, 0%);
+      
+    } 
+
+    .navbar a {
         display: none;
     }
     .slogan {
@@ -57,14 +252,12 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .slogan p {
-        text-transform: uppercase;
-    }
-
-    
+   
     /* about section */
-
     .about {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
         margin-top: 0.5rem;
     }
     #img_interactive {
@@ -74,8 +267,8 @@ body {
     }
     .about_header {
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 2rem;
         text-align: center;
+        font-size: 2rem;
         text-transform: uppercase;
     }
     .about_detail {
@@ -83,25 +276,26 @@ body {
         font-family: 'Alata', sans-serif;
         text-align: center;
     }
-
-
     /* our creations section */
-
-
-    .creations{ 
+    .creations {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .creation_img {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.7fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-content: center;
         margin: 2rem 0;
     }
-
     .creation_header {
-        text-align: center;
+        all:unset;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 2rem;
         text-transform: uppercase;
         padding: 2rem 0;
+        margin: 0 auto;
     }
     .creation_ex {
         color: hsl(0, 0%, 100%);
@@ -113,19 +307,17 @@ body {
     }
     .e1 {
         background-image: url("images/mobile/image-deep-earth.jpg");
-        background-position: center; 
-
+        background-position: center;
     }
     .e2 {
         background-image: url("images/mobile/image-night-arcade.jpg");
-         background-position: center; 
-         /* background-size: cover; */
-        
+        background-position: center;
+        /* background-size: cover; */
     }
     .e3 {
         background-image: url("images/mobile/image-soccer-team.jpg");
-         background-position: center;
-         background-size: cover;
+        background-position: center;
+        background-size: cover;
     }
     .e4 {
         background-image: url("images/mobile/image-grid.jpg");
@@ -148,24 +340,18 @@ body {
         background-image: url("images/mobile/image-fisheye.jpg");
         background-position: center;
     }
-
-    .creation_seeAll{ 
+    .creation_seeAll {
         font-size: 1.5rem;
         background-color: white;
         font-family: 'Josefin Sans', sans-serif;
         text-transform: uppercase;
         text-align: center;
-        align-self: center;
-        margin: 0 6rem;
         padding: 1rem;
+        order: 5;
     }
-
-
-
     /* footer section */
-
-    .footer{ 
-        background-color:hsl(0, 0%, 0%) ;
+    .footer {
+        background-color: hsl(0, 0%, 0%);
         color: white;
         font-family: 'Alata', sans-serif;
         text-align: center;
@@ -173,18 +359,13 @@ body {
         flex-flow: column wrap;
         justify-content: center;
     }
-
-   .footer *{ 
-       padding: 0.5rem;
-   }
-
-    .social_logos{ 
+    .footer * {
+        padding: 0.5rem;
+    }
+    .social_logos {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
         margin: 1rem;
-       
     }
-
-    
 }

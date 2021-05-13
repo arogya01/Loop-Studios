@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
     rel="stylesheet">
+    <script src="index.js"></script>
   <title>Frontend Mentor | Loopstudios landing page</title>
 </head>
 
@@ -24,40 +25,43 @@
 
       <div class="navbar">
         <img class="ham" src="Assets/images/icon-hamburger.svg" alt="ham">
-        <li>About</li>
-        <li>Careers</li>
-        <li>Events</li>
-        <li>Products</li>
-        <li>Support</li>
+      <a href="#">About</a>
+      <a href="#"> Careers</a>
+      <a href="#">Events</a> 
+      <a href="#"> Products</a>
+      <a href="#">Support</a> 
       </div>
+      
     </div>
 
     <div class="slogan">
       <p>Immersive</p>
       <p> experiences</p>
-      <p>that</p>
-      <p>deliver</p>
+      <p>that deliver</p>
+     
 
     </div>
   </div>
 
   <div class="about">
     <picture>
-      <source media="(max-width:600px)" srcset="Assets/images/mobile/image-interactive.jpg">
-      <source media="(min-width:601px" srcset="Assets/images/desktop/image-interactive.jpg">
+      <source media="(max-width:1000px)" srcset="Assets/images/mobile/image-interactive.jpg">
+      <source media="(min-width:1001px)" srcset="Assets/images/desktop/image-interactive.jpg">
       <img id="img_interactive" src="Assets/images/mobile/image-interactive.jpg" alt="img">
     </picture>
+    <div class="about_wrapper">
     <h3 class="about_header">The leader in interactive VR</h3>
     <p class="about_detail">Founded in 2011, Loopstudios has been producing world-class virtual reality
       projects for some of the best companies around the globe. Our award-winning
       creations have transformed businesses through digital experiences that bind
       to their brand.</p>
   </div>
+</div>
 
   <div class="creations">
 
     <h3 class="creation_header">Our creations</h3>
-
+    <div class="creation_img">
     <p class="creation_ex e1 "> Deep <br> earth</p>
     <p class="creation_ex e2"> Night <br> arcade</p>
     <p class="creation_ex e3">Soccer <br> team VR</p>
@@ -66,22 +70,24 @@
     <p class="creation_ex e6"> Pocket <br>borealis</p>
     <p class="creation_ex e7">The <br>curiosity</p>
     <p class="creation_ex e8"> Make it <br>fisheye</p>
-
+  </div>
 
     <button class="creation_seeAll">See all</button>
   </div>
 
 <div class="footer">
-  <div class="logo">
+  <div class="footer_logo">
     <img src="assets/images/logo.svg" alt="logo">
   </div>
   
+  <div class="links">
   <p class="footer_i">About</p>
   <p class="footer_i">Careers</p>
   <p class="footer_i">Events</p>
   <p class="footer_i">Products</p>
   <p class="footer_i">Support</p> 
-  
+</div>
+
   <div class="social_logos">
     <div class="social_logo"> 
       <img src="assets/images/icon-facebook.svg" alt="facebook">
@@ -96,6 +102,7 @@
       <img src="assets/images/icon-instagram.svg" alt="facebook">
     </div>
   </div>
+
   <div class="copyrights">
    <p> © 2021 Loopstudios. All rights reserved. </p>
   </div>
@@ -105,6 +112,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
 </body>
 
 </html>
