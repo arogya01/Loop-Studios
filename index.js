@@ -5,6 +5,7 @@ window.addEventListener("resize",()=>{
      if(window.innerWidth<=1000){
    document.getElementById("ham").style.display="initial";
    document.querySelector(".navbar").style.display="none";
+   
    document.getElementById("ham").addEventListener("click",()=>{
     console.log("woe");
     document.querySelector(".slogan").style.display="none";
