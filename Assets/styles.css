@@ -267,7 +267,9 @@ body {
     justify-content: space-between;
 }
 
-
+.navbar{ 
+    display: none;
+}
 
 #ham,#close{
     object-fit: contain;
