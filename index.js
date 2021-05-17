@@ -1,4 +1,13 @@
 
+if(window.innerWidth<=1000){ 
+    document.getElementById("ham").style.display="initial";
+    document.querySelector(".navbar").style.display="none";
+}
+if(window.innerWidth>1000){ 
+    document.getElementById("ham").style.display="none";
+}
+
+
 window.addEventListener("resize",()=>{
     
     //when the width is less than 1000px, set .ham->visible;

@@ -1,6 +1,21 @@
 /* font-family: 'Alata', sans-serif;
 font-family: 'Josefin Sans', sans-serif; */
 
+:root{ 
+    /* colors */
+    --black-col:hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-gray-col: hsl(0, 0%, 55%);
+    --Very-Dark-Gray-col: hsl(0, 0%, 41%);
+
+    /* fonts */
+
+   --header-font:'Josefin Sans', sans-serif;
+   --para-font:'Alata', sans-serif;
+}
+
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,13 +25,12 @@ font-family: 'Josefin Sans', sans-serif; */
 body {
     width: 100%;
     height: 100vh;
+    font-size: 15px;
 }
 
 /* hero section */
 
-#ham{ 
-    display: none;
-}  
+
 
 #close{
   display: none;
@@ -24,8 +38,8 @@ body {
 
 .heroSection {
     max-width: 100%;
-    color: hsl(0, 0%, 100%);
-    font-family: 'Josefin Sans', sans-serif;
+    color:var(--White);
+    font-family:var(--header-font);
     position: relative;
     height: 100%;
     justify-content: space-around;
@@ -43,7 +57,7 @@ body {
 
 .navbar li  a{ 
     text-decoration: none;
-    color: white;
+    color: var(--White);
     font-size: 1.2rem;
 }
 
@@ -71,7 +85,7 @@ body {
 
 
 .slogan {
-    border: 5px solid white;
+    border: 5px solid var(--White);
     position: absolute;
     padding: 4rem;
     font-size: 4rem;
@@ -102,13 +116,13 @@ body {
 }
 
 .about_header {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--header-font);
     font-size: 4rem;
     text-transform: uppercase;
 }
 
 .about_detail {
-    font-family: 'Alata', sans-serif;
+    font-family: var(--para-font);
    
 }
 
@@ -122,6 +136,7 @@ body {
 
 
 .creations { 
+    font-family: var(--header-font);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -133,7 +148,6 @@ body {
 
 .creation_header {
     order: -2;
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-left: 3rem;
@@ -151,8 +165,7 @@ body {
 }
 
 .creation_ex {
-    color: hsl(0, 0%, 100%);
-    font-family: 'Josefin Sans', sans-serif;
+    color: var(--White);
     font-size: 1.5rem;
     text-transform: uppercase;
     text-align:center;
@@ -196,9 +209,9 @@ body {
 .creation_seeAll {
     order: -1;
     font-size: 1.5rem;
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(0, 0%, 0%);
-    font-family: 'Josefin Sans', sans-serif;
+    background-color:var(--White);
+    color: var(--black-col);
+     font-family:var(--header-font);
     text-transform: uppercase;
     text-align: center;
     align-self: center;
@@ -210,9 +223,9 @@ body {
 /* the footer section */
 
 .footer {
-    background-color: hsl(0, 0%, 0%);
-    color: white;
-    font-family: 'Alata', sans-serif;
+    background-color: var(--black-col);
+    color: var(--White);
+    font-family: var(--para-font);
     text-align: center;
     display: grid;
     gap: 1rem;
@@ -243,7 +256,7 @@ body {
 
 .copyrights {
     order: 4;
-    color: hsl(0, 0%, 55%);
+    color: var(--Dark-gray-col);
 }
 
 
@@ -320,14 +333,12 @@ body {
         padding: 3rem 1rem 1rem 1rem;
     }
     .about_header {
-        font-family: 'Josefin Sans', sans-serif;
         text-align: center;
         font-size: 2rem;
         text-transform: uppercase;
     }
     .about_detail {
         margin: 0.5rem;
-        font-family: 'Alata', sans-serif;
         text-align: center;
     }
     /* our creations section */
@@ -345,17 +356,12 @@ body {
     }
     .creation_header {
         all:unset;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 2rem;
         text-transform: uppercase;
+        font-size: 2rem;
         padding: 2rem 0;
         margin: 0 auto;
     }
     .creation_ex {
-        color: hsl(0, 0%, 100%);
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 1.5rem;
-        text-transform: uppercase;
         padding: 2rem;
         margin: 1rem 2rem;
     }
@@ -395,20 +401,11 @@ body {
         background-position: center;
     }
     .creation_seeAll {
-        font-size: 1.5rem;
-       
-        font-family: 'Josefin Sans', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
         padding: 1rem;
         order: 5;
     }
     /* footer section */
     .footer {
-        background-color: hsl(0, 0%, 0%);
-        color: white;
-        font-family: 'Alata', sans-serif;
-        text-align: center;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
