@@ -290,6 +290,7 @@ body {
     }
     /* about section */
     .about {
+        all: unset;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
