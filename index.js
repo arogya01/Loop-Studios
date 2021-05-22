@@ -6,7 +6,7 @@ setNavbar();
 window.addEventListener("resize", () => {
 
      //when the width is less than 1000px, set .ham->visible;
-     if(window.innerWidth>1000){
+     if(window.innerWidth>1000 || window.innerWidth<=1000){
        setNavbar();
      }
     
