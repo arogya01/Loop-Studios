@@ -1,13 +1,20 @@
 
-checkWidth();
+setNavbar();
+
+
 
 window.addEventListener("resize", () => {
 
-    //when the width is less than 1000px, set .ham->visible;
-   checkWidth();
-});
+     //when the width is less than 1000px, set .ham->visible;
+     if(window.innerWidth>1000){
+       setNavbar();
+     }
+    
+ });
 
-function checkWidth(){
+
+
+function setNavbar(){
 
     if (window.innerWidth <= 1000) {
         document.getElementById("ham").style.display = "initial";
